@@ -6,9 +6,9 @@ Please visit [fhir-works-on-aws-deployment](https://github.com/awslabs/fhir-work
 
 This package is an implementation of the persistence components of the [FHIR Works interface](https://github.com/awslabs/fhir-works-on-aws-interface). It is responsible for executing CRUD based requests from the router by proxying the requests to an Integration Transform microservice. 
 
-The Integration Transform should implement authentication by using API Gateway [resource policy](https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-resource-policies-examples.html#apigateway-resource-policies-cross-account-example).
+The Integration Transform microservice should implement authentication by using API Gateway [resource policy](https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-resource-policies-examples.html#apigateway-resource-policies-cross-account-example).
  
- The Integration Transform should also implement the persistence APIs as defined [here](https://github.com/awslabs/fhir-works-on-aws-interface/blob/mainline/openapi.yaml). Routes that should be implemented
+ The Integration Transform microservice should also implement the persistence APIs as defined [here](https://github.com/awslabs/fhir-works-on-aws-interface/blob/mainline/openapi.yaml). Routes that should be implemented
 - POST `/persistence/{resourceType}`
 - GET `/persistence/{resourceType}/{id}`
 - PUT `/persistence/{resourceType}/{id}`
@@ -16,11 +16,11 @@ The Integration Transform should implement authentication by using API Gateway [
  
 For more details about the Integration Transform and how to set it up, please refer to [here](https://github.com/aws-samples/fhir-hl7v2-integration-transform)
 
-To use and deploy `fhir-works-on-aws-persistence-facade` (with the other 'out of the box' components) please follow the overall [README in the API branch](https://github.com/awslabs/fhir-works-on-aws-deployment/tree/api).
+To use and deploy `fhir-works-on-aws-persistence-facade` (with the other 'out of the box' components) please follow the overall [README in the API branch of the deployment package](https://github.com/awslabs/fhir-works-on-aws-deployment/tree/api).
 
 ## Usage
 
-For usage please add this package to your `package.json` file and install as a dependency. For usage examples please see the deployment component's [package.json](https://github.com/awslabs/fhir-works-on-aws-deployment/blob/mainline/package.json)
+For usage please add this package to your `package.json` file and install as a dependency. For usage examples please see the deployment component's [package.json](https://github.com/awslabs/fhir-works-on-aws-deployment/blob/api/package.json)
 
 ## Dependency tree
 

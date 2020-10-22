@@ -1,7 +1,7 @@
 {
   "name": "fhir-works-on-aws-persistence-facade",
   "version": "1.0.0",
-  "description": "FHIR Works on AWS persistence facade implementation",
+  "description": "FHIR Works on AWS persistence facade implementation, that enables microservice interactions based on the common language defined in the interface",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "author": {
