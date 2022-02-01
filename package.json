@@ -53,7 +53,9 @@
   },
   "resolutions": {
     "axios": "0.21.2",
-    "set-value": "^4.0.1"
+    "set-value": "^4.0.1",
+    "json-schema": "^0.4.0",
+    "ansi-regex": "^5.0.1"
   },
   "jest": {
     "moduleFileExtensions": [
